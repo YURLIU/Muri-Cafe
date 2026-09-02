@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Muri Cafe — Головна</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="home.css">
+</head>
+
+<body>
+
+<header>
+    <div class="container">
+
+        <a href="index.html" class="logo">
+            Muri Cafe
+        </a>
+
+        <button class="menu-toggle" id="menu-toggle" type="button">
+            ☰
+        </button>
+
+        <nav>>
+            <ul id="nav-menu">
+
+                <li>
+                    <a href="index.html" class="active">
+                        Головна
+                    </a>
+                </li>
+
+                <li>
+                    <a href="menu.html">
+                        Меню
+                    </a>
+                </li>
+
+                <li>
+                    <a href="about.html">
+                        Про нас
+                    </a>
+                </li>
+
+                <li>
+                    <a href="contacts.html">
+                        Контакти
+                    </a>
+                </li>
+
+                <li>
+                    <a href="cart.html" class="cart-link">
+                        🛒 Кошик
+                        <span id="cart-count">0</span>
+                    </a>
+                </li>
+
+            </ul>
+        </nav>
+
+    </div>
+</header>
+
+
+<main>
+
+
+
+    <section class="hero">
+
+        <div class="hero-text">
+
+            <span class="hero-label">
+                ☕ YOUR COZY COFFEE PLACE
+            </span>
+
+            <h1>
+                Ласкаво просимо<br>
+                до Muri Cafe
+            </h1>
+
+            <p>
+                Затишна атмосфера, ароматна кава та десерти,
+                які хочеться скуштувати ще раз.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="menu.html" class="btn">
+                    Переглянути меню
+                </a>
+
+                <a href="about.html" class="btn btn-light">
+                    Дізнатися більше
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+   
+
+    <section class="about-home">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <span>
+                    MURI CAFE
+                </span>
+
+                <h2>
+                    Чому саме ми?
+                </h2>
+
+                <p>
+                    Маленькі деталі роблять кожну чашку особливою.
+                </p>
+
+            </div>
+
+
+            <div class="features">
+
+                <div class="feature">
+
+                    <div class="feature-icon">
+                         <img src="https://cdn-icons-png.flaticon.com/256/7138/7138678.png" >
+                    </div>
+
+                    <h3>
+                        Свіжа кава
+                    </h3>
+
+                    <p>
+                        Готуємо каву зі свіжообсмажених
+                        зерен, щоб кожна чашка мала
+                        насичений аромат.
+                    </p>
+
+                </div>
+
+
+                <div class="feature">
+
+                    <div class="feature-icon">
+                        <img src="https://cdn-icons-png.flaticon.com/256/7138/7138682.png">
+                    </div>
+
+                    <h3>
+                        Домашні десерти
+                    </h3>
+
+                    <p>
+                        Щодня створюємо свіжі десерти
+                        власного виробництва.
+                    </p>
+
+                </div>
+
+
+                <div class="feature">
+
+                    <div class="feature-icon">
+                        <img src="https://cdn-icons-png.flaticon.com/256/7138/7138693.png" >
+                    </div>
+
+                    <h3>
+                        Доставка
+                    </h3>
+
+                    <p>
+                        Частину нашого меню можна
+                        замовити прямо до вашого дому.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- POPULAR -->
+
+    <section class="popular">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <span>
+                    OUR FAVORITES
+                </span>
+
+                <h2>
+                    Популярне
+                </h2>
+
+                <p>
+                    Те, що наші гості замовляють найчастіше 🤎
+                </p>
+
+            </div>
+
+
+            <div class="cards">
+
+
+                <div class="card">
+
+                    <div class="photo">
+
+                        <img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRb4mmrIG6yWRUll5Pjf9NiF3PAyQAuxc3LhLz2sUtRTQ&s=10"
+                            alt="Iced Latte"
+                        >
+
+                    </div>
+
+                    <div class="card-content">
+
+                        <h3>
+                            Iced Latte
+                        </h3>
+
+                        <p>
+                            Ніжна кава з холодним молоком та льодом.
+                        </p>
+
+                        <div class="card-bottom">
+
+                            <strong>
+                                65 грн
+                            </strong>
+
+                            <button
+                                onclick="addToCart('Iced Latte', 65)"
+                            >
+                                +
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="card">
+
+                    <div class="photo">
+
+                        <img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSU2UVQltFdAEXo61tVgd-xGF-quYELlx8ncp8uz6xzbQ&s=10"
+                            alt="Cheesecake"
+                        >
+
+                    </div>
+
+                    <div class="card-content">
+
+                        <h3>
+                            Cheesecake
+                        </h3>
+
+                        <p>
+                            Ніжний сирний десерт із карамельною скоринкою.
+                        </p>
+
+                        <div class="card-bottom">
+
+                            <strong>
+                                120 грн
+                            </strong>
+
+                            <button
+                                onclick="addToCart('Cheesecake', 120)"
+                            >
+                                +
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="card">
+
+                    <div class="photo">
+
+                        <img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4ydtzl6u_D5xBX9vJULyMEidXiXPREaONeDDBm7PSsQ&s=10"
+                            alt="Bubble Tea"
+                        >
+
+                    </div>
+
+                    <div class="card-content">
+
+                        <h3>
+                            Bubble Tea
+                        </h3>
+
+                        <p>
+                            Яскравий азійський напій з ніжними кульками тапіоки.
+                        </p>
+
+                        <div class="card-bottom">
+
+                            <strong>
+                                90 грн
+                            </strong>
+
+                            <button
+                                onclick="addToCart('Bubble Tea', 90)"
+                            >
+                                +
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+            <div class="center-button">
+
+                <a href="menu.html" class="btn">
+                    Переглянути все меню →
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CTA -->
+
+    <section class="home-cta">
+
+        <div class="container">
+
+            <div class="cta-box">
+
+                <span>
+                    ЗАВІТАЙ ДО НАС
+                </span>
+
+                <h2>
+                    Твоя наступна<br>
+                    улюблена кава чекає ☕
+                </h2>
+
+                <a href="contacts.html" class="btn">
+                    Знайти нас
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<footer>
+
+    <div class="container">
+
+        <h2>
+            Muri Cafe
+        </h2>
+
+        <p>
+            З любов'ю до кави та наших гостей 🤎
+        </p>
+
+        <p class="copyright">
+            © 2026 Muri Cafe. Усі права захищені.
+        </p>
+
+    </div>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
