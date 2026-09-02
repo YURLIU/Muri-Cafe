@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Muri Cafe — Кошик</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header>
+
+    <div class="container">
+
+        <a href="index.html" class="logo">
+            Muri Cafe
+        </a>
+
+        <button class="menu-toggle" id="menu-toggle" type="button">
+            ☰
+        </button>
+
+        <nav>
+
+            <ul id="nav-menu">
+
+                <li>
+                    <a href="index.html">
+                        Головна
+                    </a>
+                </li>
+
+                <li>
+                    <a href="menu.html">
+                        Меню
+                    </a>
+                </li>
+
+                <li>
+                    <a href="about.html">
+                        Про нас
+                    </a>
+                </li>
+
+                <li>
+                    <a href="contacts.html">
+                        Контакти
+                    </a>
+                </li>
+
+                <li>
+                    <a href="cart.html" class="active cart-link">
+                        🛒 Кошик
+                        <span id="cart-count">0</span>
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+<main>
+
+    <section class="page-header">
+
+        <div class="container">
+
+            <span>
+                YOUR ORDER
+            </span>
+
+            <h1>
+                Ваш кошик
+            </h1>
+
+            <p>
+                Все, що ви обрали, знаходиться тут 🤎
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <section class="cart-section">
+
+        <div class="container">
+
+            <div class="cart">
+
+                <div id="cart-items">
+                </div>
+
+
+                <div class="cart-summary">
+
+                    <h2 id="total">
+                        Разом: 0 грн
+                    </h2>
+                    
+                    <button class="order-btn" onclick="placeOrder()">
+    Замовити ☕
+</button>
+
+                    <div class="cart-buttons">
+
+                        <button
+                            onclick="clearCart()"
+                            class="btn-danger"
+                        >
+                            Очистити кошик
+                        </button>
+
+                        <a
+                            href="menu.html"
+                            class="btn"
+                        >
+                            ← Повернутися до меню
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<footer>
+
+    <div class="container">
+
+        <h2>
+            Muri Cafe
+        </h2>
+
+        <p>
+            З любов'ю до кави та наших гостей 🤎
+        </p>
+
+        <p class="copyright">
+            © 2026 Muri Cafe. Усі права захищені.
+        </p>
+
+    </div>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
