@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Muri Cafe — Меню</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header>
+
+    <div class="container">
+
+        <a href="index.html" class="logo">
+            Muri Cafe
+        </a>
+
+        <button class="menu-toggle" id="menu-toggle" type="button">
+            ☰
+        </button>
+
+        <nav>
+
+            <ul id="nav-menu">
+
+                <li>
+                    <a href="index.html">
+                        Головна
+                    </a>
+                </li>
+
+                <li>
+                    <a href="menu.html" class="active">
+                        Меню
+                    </a>
+                </li>
+
+                <li>
+                    <a href="about.html">
+                        Про нас
+                    </a>
+                </li>
+
+                <li>
+                    <a href="contacts.html">
+                        Контакти
+                    </a>
+                </li>
+
+                <li>
+                    <a href="cart.html" class="cart-link">
+                        🛒 Кошик
+                        <span id="cart-count">0</span>
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+<main>
+
+    <section class="page-header">
+
+        <div class="container">
+
+            <span>
+                MURI CAFE
+            </span>
+
+            <h1>
+                Наше меню
+            </h1>
+
+            <p>
+                Обирай щось смачненьке та додавай до кошика 🤎
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <section class="menu-section">
+
+        <div class="container">
+
+            <div class="menu-container">
+
+
+                <!-- 1 -->
+
+                <div class="card">
+
+                    <div class="photo">
+                        <img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRb4mmrIG6yWRUll5Pjf9NiF3PAyQAuxc3LhLz2sUtRTQ&s=10"
+                            alt="Iced Latte"
+                        >
+                    </div>
+
+                    <h3>Iced Latte</h3>
+
+                    <p>
+                        Класичний м'який напій з еспресо,
+                        холодного молока та кубиків льоду.
+                    </p>
+
+                    <div class="price">
+                        65 грн
+                    </div>
+
+                    <button onclick="addToCart('Iced Latte', 65)">
+                        Додати 🛒
+                    </button>
+
+                </div>
+
+
+                <!-- 2 -->
+
+                <div class="card">
+
+                    <div class="photo">
+                        <img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnVxRUbH2VZW_WF7xLatPp4MGqq_UVm1ojmd4RnhhsVg&s=10"
+                            alt="Espresso Tonic"
+                        >
+                    </div>
+
+                    <h3>Espresso Tonic</h3>
+
+                    <p>
+                        Освіжаючий напій із тоніка,
+                        льоду, лайма та еспресо.
+                    </p>
+
+                    <div class="price">
+                        75 грн
+                    </div>
+
+                    <button onclick="addToCart('Espresso Tonic', 75)">
+                        Додати 🛒
+                    </button>
+
+                </div>
+
+
+                <!-- 3 -->
+
+                <div class="card">
+
+                    <div class="photo">
+                        <img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrGHZt3JtJNBpgtZFBxeHMwYyBw8gxLFA7OSUWNVd_hA&s=10"
+                            alt="Bumblebee"
+                        >
+                    </div>
+
+                    <h3>Bumblebee</h3>
+
+                    <p>
+                        Апельсиновий сік, карамельний сироп,
+                        лід та порція еспресо.
+                    </p>
+
+                    <div class="price">
+                        75 грн
+                    </div>
+
+                    <button onclick="addToCart('Bumblebee', 75)">
+                        Додати 🛒
+                    </button>
+
+                </div>
+
+
+                <!-- 4 -->
+
+                <div class="card">
+
+                    <div class="photo">
+                        <img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAB7BeCsF94Nlitzxdyr65vnehMdAGLheaP69396eOfw&s=10"
+                            alt="Frappe"
+                        >
+                    </div>
+
+                    <h3>Frappe</h3>
+
+                    <p>
+                        Еспресо, молоко, лід та сироп,
+                        збиті до ніжної крижаної піни.
+                    </p>
+
+                    <div class="price">
+                        80 грн
+                    </div>
+
+                    <button onclick="addToCart('Frappe', 80)">
+                        Додати 🛒
+                    </button>
+
+                </div>
+
+
+                <!-- 5 -->
+
+                <div class="card">
+
+                    <div class="photo">
+                        <img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLr3wAQ7_V04p83WR-brpu-UUcIXZw46ncagc9iXvn-A&s"
+                            alt="Affogato"
+                        >
+                    </div>
+
+                    <h3>Affogato</h3>
+
+                    <p>
+                        Ванільне морозиво, залите гарячим еспресо.
+                        Ідеальний кавовий десерт.
+                    </p>
+
+                    <div class="price">
+                        70 грн
+                    </div>
+
+                    <button onclick="addToCart('Affogato', 70)">
+                        Додати 🛒
+                    </button>
+
+                </div>
+
+
+                <!-- 6 -->
+
+                <div class="card">
+
+                    <div class="photo">
+                        <img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStkVTmwNln6owyWfzJSiwqDPSUpzw8wCFNFdHWTj1low&s=10"
+                            alt="Iced Matcha Latte"
+                        >
+                    </div>
+
+                    <h3>Iced Matcha Latte</h3>
+
+                    <p>
+                        Японський зелений чай матча,
+                        холодне молоко та лід.
+                    </p>
+
+                    <div class="price">
+                        80 грн
+                    </div>
+
+                    <button onclick="addToCart('Iced Matcha Latte', 80)">
+                        Додати 🛒
+                    </button>
+
+                </div>
+
+
+                <!-- 7 -->
+
+                <div class="card">
+
+                    <div class="photo">
+                        <img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5ol-7kK9BjL2euy7L2IHHu2Fk1RPkAlNVS0yyFPIbAA&s=10"
+                            alt="Mojito"
+                        >
+                    </div>
+
+                    <h3>Mojito</h3>
+
+                    <p>
+                        Мінеральна вода, свіжа м'ята,
+                        лайм, сироп та багато льоду.
+                    </p>
+
+                    <div class="price">
+                        65 грн
+                    </div>
+
+                    <button onclick="addToCart('Mojito', 65)">
+                        Додати 🛒
+                    </button>
+
+                </div>
+
+
+                <!-- 8 -->
+
+                <div class="card">
+
+                    <div class="photo">
+                        <img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4ydtzl6u_D5xBX9vJULyMEidXiXPREaONeDDBm7PSsQ&s=10"
+                            alt="Bubble Tea"
+                        >
+                    </div>
+
+                    <h3>Bubble Tea</h3>
+
+                    <p>
+                        Популярний азійський напій
+                        з чаєм, молоком та кульками тапіоки.
+                    </p>
+
+                    <div class="price">
+                        90 грн
+                    </div>
+
+                    <button onclick="addToCart('Bubble Tea', 90)">
+                        Додати 🛒
+                    </button>
+
+                </div>
+
+
+                <!-- 9 -->
+
+                <div class="card">
+
+                    <div class="photo">
+                        <img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfi4z8yv-3GNxTIwH1sLW_ZtCTRz6Me9XjQcspxpPS6g&s"
+                            alt="Hot Ice Chocolate"
+                        >
+                    </div>
+
+                    <h3>Hot Ice Chocolate</h3>
+
+                    <p>
+                        Гарячий шоколад знизу та холодне
+                        молоко з льодом зверху.
+                    </p>
+
+                    <div class="price">
+                        85 грн
+                    </div>
+
+                    <button onclick="addToCart('Hot Ice Chocolate', 85)">
+                        Додати 🛒
+                    </button>
+
+                </div>
+
+
+                <!-- 10 -->
+
+                <div class="card">
+
+                    <div class="photo">
+                        <img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSU2UVQltFdAEXo61tVgd-xGF-quYELlx8ncp8uz6xzbQ&s=10"
+                            alt="Cheesecake"
+                        >
+                    </div>
+
+                    <h3>Cheesecake</h3>
+
+                    <p>
+                        Ніжний сирний десерт на пісочній основі
+                        з карамельною скоринкою.
+                    </p>
+
+                    <div class="price">
+                        120 грн
+                    </div>
+
+                    <button onclick="addToCart('Cheesecake', 120)">
+                        Додати 🛒
+                    </button>
+
+                </div>
+
+
+                <!-- 11 -->
+
+                <div class="card">
+
+                    <div class="photo">
+                        <img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNocYr1ONyYmWVDyAb4oAyYIfUH0KGJy5h-PKYuFDiKw&s=10"
+                            alt="Tiramisu"
+                        >
+                    </div>
+
+                    <h3>Tiramisu</h3>
+
+                    <p>
+                        Савоярді, просочене еспресо,
+                        крем маскарпоне та какао.
+                    </p>
+
+                    <div class="price">
+                        120 грн
+                    </div>
+
+                    <button onclick="addToCart('Tiramisu', 120)">
+                        Додати 🛒
+                    </button>
+
+                </div>
+
+
+                <!-- 12 -->
+
+                <div class="card">
+
+                    <div class="photo">
+                        <img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQH_Q7ahiY0uGsGw-n-qhwE6yw-FE5SJOK57marcdw6FQ&s=10"
+                            alt="Red Velvet Cake"
+                        >
+                    </div>
+
+                    <h3>Red Velvet Cake</h3>
+
+                    <p>
+                        Червоні бісквітні коржі з шоколадним
+                        післясмаком та крем-чізом.
+                    </p>
+
+                    <div class="price">
+                        115 грн
+                    </div>
+
+                    <button onclick="addToCart('Red Velvet Cake', 115)">
+                        Додати 🛒
+                    </button>
+
+                </div>
+
+
+                <!-- 13 -->
+
+                <div class="card">
+
+                    <div class="photo">
+                        <img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAc4cULdEiEZxerOhv6-07u76X05Gnn9I_W4QsehrQDg&s=10"
+                            alt="Napoleon Cake"
+                        >
+                    </div>
+
+                    <h3>Napoleon Cake</h3>
+
+                    <p>
+                        Класичний «Наполеон» з хрусткими
+                        коржами та ніжним кремом.
+                    </p>
+
+                    <div class="price">
+                        110 грн
+                    </div>
+
+                    <button onclick="addToCart('Napoleon Cake', 110)">
+                        Додати 🛒
+                    </button>
+
+                </div>
+
+
+                <!-- 14 -->
+
+                <div class="card">
+
+                    <div class="photo">
+                        <img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTxu4AarvuAZgYcp3y5X_haEZOXtRKu6sCA5r_SE3shw&s=10"
+                            alt="Cinnamon Roll"
+                        >
+                    </div>
+
+                    <h3>Cinnamon Roll</h3>
+
+                    <p>
+                        Здобна булочка з корицею
+                        та вершковою глазур'ю.
+                    </p>
+
+                    <div class="price">
+                        95 грн
+                    </div>
+
+                    <button onclick="addToCart('Cinnamon Roll', 95)">
+                        Додати 🛒
+                    </button>
+
+                </div>
+
+
+                <!-- 15 -->
+
+                <div class="card">
+
+                    <div class="photo">
+                        <img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTB-JlMAVCSCok5eWrpP2XW_g3TrriRcFzqJRC8A7QBvg&s=10"
+                            alt="Muffin"
+                        >
+                    </div>
+
+                    <h3>Muffin</h3>
+
+                    <p>
+                        М'який кекс з шоколадом,
+                        чорницею або солоною карамеллю.
+                    </p>
+
+                    <div class="price">
+                        50 грн
+                    </div>
+
+                    <button onclick="addToCart('Muffin', 50)">
+                        Додати 🛒
+                    </button>
+
+                </div>
+
+
+                <!-- 16 -->
+
+                <div class="card">
+
+                    <div class="photo">
+                        <img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAo0nOLYQRxL1tEBg8dsTRzCiRQnBo_zqcJyot8-jH6A&s=10"
+                            alt="Macaron"
+                        >
+                    </div>
+
+                    <h3>Macaron</h3>
+
+                    <p>
+                        Мигдальне тістечко-безе
+                        з ніжною начинкою.
+                    </p>
+
+                    <div class="price">
+                        45 грн
+                    </div>
+
+                    <button onclick="addToCart('Macaron', 45)">
+                        Додати 🛒
+                    </button>
+
+                </div>
+
+
+                <!-- 17 -->
+
+                <div class="card">
+
+                    <div class="photo">
+                        <img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQoGeYCiOwdCDGiLWlFue5O-Ai3ygG2h5YFouzT2qoZA&s=10"
+                            alt="Cake Pop"
+                        >
+                    </div>
+
+                    <h3>Cake Pop</h3>
+
+                    <p>
+                        Ніжний бісквітний десерт
+                        у шоколадній глазурі на паличці.
+                    </p>
+
+                    <div class="price">
+                        45 грн
+                    </div>
+
+                    <button onclick="addToCart('Cake Pop', 45)">
+                        Додати 🛒
+                    </button>
+
+                </div>
+
+
+                <!-- 18 -->
+
+                <div class="card">
+
+                    <div class="photo">
+                        <img
+                            src="https://www.shutterstock.com/image-photo/chia-pudding-mango-granola-glass-260nw-2761537203.jpg"
+                            alt="Coconut Mango Chia Pudding"
+                        >
+                    </div>
+
+                    <h3>Coconut Mango Chia Pudding</h3>
+
+                    <p>
+                        Кокосовий пудинг з насінням чіа
+                        та соковитим манго.
+                    </p>
+
+                    <div class="price">
+                        90 грн
+                    </div>
+
+                    <button onclick="addToCart('Coconut Mango Chia Pudding', 90)">
+                        Додати 🛒
+                    </button>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<footer>
+
+    <div class="container">
+
+        <h2>
+            Muri Cafe
+        </h2>
+
+        <p>
+            З любов'ю до кави та наших гостей 🤎
+        </p>
+
+        <p class="copyright">
+            © 2026 Muri Cafe. Усі права захищені.
+        </p>
+
+    </div>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
