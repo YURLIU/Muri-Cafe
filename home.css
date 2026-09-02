@@ -1,0 +1,337 @@
+
+
+.hero {
+    min-height: 86vh;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    position: relative;
+
+    overflow: hidden;
+
+    background:
+        linear-gradient(
+            rgba(243, 230, 211, .68),
+            rgba(243, 230, 211, .90)
+        ),
+        url("https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=1800&q=85");
+
+    background-size: cover;
+
+    background-position: center;
+}
+
+
+.hero::before {
+    content: "";
+
+    position: absolute;
+
+    width: 500px;
+    height: 500px;
+
+    border-radius: 50%;
+
+    background: rgba(255, 250, 243, .35);
+
+    filter: blur(5px);
+}
+
+
+.hero-text {
+    position: relative;
+
+    z-index: 2;
+
+    max-width: 850px;
+
+    padding: 30px;
+}
+
+
+.hero-label {
+    display: inline-block;
+
+    color: #9a6236;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 15px;
+
+    animation: fadeDown .8s ease;
+}
+
+
+.hero-text h1 {
+    font-family: 'Dancing Script', cursive;
+
+    font-size: clamp(55px, 8vw, 90px);
+
+    line-height: 1;
+
+    color: #6b3f20;
+
+    animation: fadeUp .8s ease;
+}
+
+
+.hero-text p {
+    max-width: 650px;
+
+    margin: 25px auto;
+
+    font-size: 20px;
+
+    color: #5b3a26;
+
+    animation: fadeUp 1s ease;
+}
+
+
+.hero-buttons {
+    display: flex;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 15px;
+
+    margin-top: 25px;
+
+    animation: fadeUp 1.2s ease;
+}
+
+
+
+.about-home {
+    padding: 100px 0;
+}
+
+
+.popular {
+    padding: 100px 0;
+
+    background:
+        rgba(255, 250, 243, .25);
+}
+
+
+.center-button {
+    text-align: center;
+
+    margin-top: 50px;
+}
+
+
+
+.home-cta {
+    padding: 80px 0 100px;
+}
+
+
+.cta-box {
+    position: relative;
+
+    overflow: hidden;
+
+    background:
+        linear-gradient(
+            135deg,
+            #7b4b2a,
+            #3b2418
+        );
+
+    color: white;
+
+    border-radius: 35px;
+
+    padding: 70px 40px;
+
+    text-align: center;
+
+    box-shadow:
+        0 20px 50px rgba(59, 36, 24, .2);
+}
+
+
+.cta-box::before {
+    content: "☕";
+
+    position: absolute;
+
+    right: 8%;
+    top: 10%;
+
+    font-size: 100px;
+
+    opacity: .08;
+
+    transform: rotate(15deg);
+}
+
+
+.cta-box span {
+    font-size: 13px;
+
+    letter-spacing: 3px;
+
+    font-weight: 700;
+
+    color: #e7bd91;
+}
+
+
+.cta-box h2 {
+    font-family: 'Dancing Script', cursive;
+
+    font-size: clamp(45px, 6vw, 70px);
+
+    line-height: 1.05;
+
+    margin: 15px 0 30px;
+}
+
+
+.cta-box .btn {
+    background: #fffaf3;
+
+    color: #6b3f20;
+}
+
+
+.cta-box .btn:hover {
+    background: #f3e6d3;
+}
+
+
+.card-content {
+    padding: 0 3px;
+}
+
+
+.card-bottom {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-top: 15px;
+}
+
+
+.card-bottom strong {
+    color: #b06d35;
+
+    font-size: 21px;
+}
+
+
+.card-bottom button {
+    width: 42px;
+
+    height: 42px;
+
+    padding: 0;
+
+    border-radius: 50%;
+
+    font-size: 22px;
+
+    line-height: 1;
+}
+
+
+@keyframes fadeUp {
+
+    from {
+        opacity: 0;
+
+        transform: translateY(25px);
+    }
+
+    to {
+        opacity: 1;
+
+        transform: translateY(0);
+    }
+
+}
+
+
+@keyframes fadeDown {
+
+    from {
+        opacity: 0;
+
+        transform: translateY(-15px);
+    }
+
+    to {
+        opacity: 1;
+
+        transform: translateY(0);
+    }
+
+}
+
+
+
+
+@media (max-width: 768px) {
+
+    .hero {
+        min-height: 78vh;
+    }
+
+
+    .hero-text {
+        padding: 20px;
+    }
+
+
+    .hero-text h1 {
+        font-size: 55px;
+    }
+
+
+    .hero-text p {
+        font-size: 17px;
+    }
+
+
+    .hero-buttons {
+        flex-direction: column;
+
+        align-items: center;
+    }
+
+
+    .hero-buttons .btn {
+        width: 100%;
+
+        max-width: 280px;
+    }
+
+
+    .about-home,
+    .popular {
+        padding: 70px 0;
+    }
+
+
+    .cta-box {
+        padding: 55px 25px;
+    }
+
+}
